@@ -47,3 +47,8 @@ desc 'drop into the Pry console'
 task console: :environment do
   Pry.start
 end
+
+desc "require files from environment"
+    task :environment do
+      require_relative './config/environment'
+    end
